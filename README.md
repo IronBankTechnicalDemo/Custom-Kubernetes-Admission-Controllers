@@ -9,7 +9,7 @@ This project provides a single image and Helm chart that does the following:
     * It also manages the creation of certificates required for TLS communication to the validation/mutating container using the Sprig-supplied TLS functionality.
     
     
-*How to Deploy*
+**How to Deploy**
 
 Deployment of the webhook is simple. Ensure you have Helm installed, and run the following:
 
