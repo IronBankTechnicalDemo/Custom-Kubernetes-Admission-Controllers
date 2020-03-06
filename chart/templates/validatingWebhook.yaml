@@ -7,7 +7,7 @@ metadata:
   labels:
     component: mutating-controller
 webhooks:
-  - name: www.test.com
+  - name: www.adamtoy.io
     failurePolicy: Fail
     clientConfig:
       service:
@@ -22,6 +22,7 @@ webhooks:
           - "*"
         operations:
           - CREATE
+          - UPDATE
       - apiGroups: [""]
         resources:
           - "pods"
@@ -29,3 +30,4 @@ webhooks:
           - "*"
         operations:
           - CREATE
+          - UPDATE
